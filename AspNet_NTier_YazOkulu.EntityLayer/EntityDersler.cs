@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AspNet_NTier_YazOkulu.EntityLayer
 {
     public class EntityDersler
     {
-        private string DERSAD { get; set; }
-        private int MIN { get; set; }
-        private int MAX { get; set; }
-        private int ID { get; set; }
+        public string DERSAD { get; set; }
+        public int MIN { get; set; }
+        public int MAX { get; set; }
+        public int ID { get; set; }
     }
 }

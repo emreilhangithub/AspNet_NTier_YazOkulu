@@ -8,8 +8,8 @@ namespace AspNet_NTier_YazOkulu.EntityLayer
 {
     public class EntityBasvuruForm
     {
-        private int BASVURUID { get; set; }
-        private int BASDERSID { get; set; }
-        private int BASOGRID { get; set; }
+        public int BASVURUID { get; set; }
+        public int BASDERSID { get; set; }
+        public int BASOGRID { get; set; }
     }
 }

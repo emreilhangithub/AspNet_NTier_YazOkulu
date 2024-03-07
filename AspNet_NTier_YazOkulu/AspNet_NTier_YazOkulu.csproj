@@ -97,6 +97,20 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AspNet_NTier_YazOkulu.BusinessLogicLayer\AspNet_NTier_YazOkulu.BusinessLogicLayer.csproj">
+      <Project>{4f97e539-a64e-4f66-9fc5-4e1ba93297a8}</Project>
+      <Name>AspNet_NTier_YazOkulu.BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AspNet_NTier_YazOkulu.DataAccessLayer\AspNet_NTier_YazOkulu.DataAccessLayer.csproj">
+      <Project>{61a70ec9-3b8d-4e3a-b2d8-4be3db6a1aa2}</Project>
+      <Name>AspNet_NTier_YazOkulu.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AspNet_NTier_YazOkulu.EntityLayer\AspNet_NTier_YazOkulu.EntityLayer.csproj">
+      <Project>{0eca71fc-50aa-46b5-8c87-d281f8d7cec9}</Project>
+      <Name>AspNet_NTier_YazOkulu.EntityLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -8,8 +8,8 @@ namespace AspNet_NTier_YazOkulu.EntityLayer
 {
     public class EntityOgretmen
     {
-        private int OGRTID { get; set; }
-        private string OGRTAD { get; set; }
-        private int OGRTBRANS { get; set; }
+        public int OGRTID { get; set; }
+        public string OGRTAD { get; set; }
+        public int OGRTBRANS { get; set; }
     }
 }
