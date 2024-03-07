@@ -4,11 +4,12 @@ namespace AspNet_NTier_YazOkulu.EntityLayer
 {
     public class EntityOgrenci
     {
-        private string AD { get; set; }
-        private string SOYAD { get; set; }
-        private int ID { get; set; }
-        private string NUMARA { get; set; }
-        private string FOTOGRAF { get; set; }
-        private double BAKIYE { get; set; }
+        public string AD { get; set; }
+        public string SOYAD { get; set; }
+        public int ID { get; set; }
+        public string NUMARA { get; set; }
+        public string FOTOGRAF { get; set; }
+        public double BAKIYE { get; set; }
+        public int SIFRE { get; set; }
     }
 }
