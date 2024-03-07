@@ -18,5 +18,11 @@ namespace AspNet_NTier_YazOkulu.BusinessLogicLayer
             }
             return -1;
         }
+
+        public static List<EntityOgrenci> BllListele()
+        {
+            return DALOgrenci.OgrenciListesi();
+        }
+
     }
 }

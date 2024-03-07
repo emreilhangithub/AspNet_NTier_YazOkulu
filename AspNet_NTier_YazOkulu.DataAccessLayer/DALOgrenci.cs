@@ -32,5 +32,31 @@ namespace AspNet_NTier_YazOkulu.DataAccessLayer
             komut1.Parameters.AddWithValue("@OGRSIFRE", parametre.SIFRE);
             return komut1.ExecuteNonQuery();
         }
+
+        public static List<EntityOgrenci> OgrenciListesi ()
+        {
+            List<EntityOgrenci> degerler  = new List<EntityOgrenci>();
+            SqlCommand komut2 = new SqlCommand("SELECT * FROM TBLOGRENCI", Baglanti.bgl);
+            if (komut2.Connection.State != ConnectionState.Open)
+            {
+                komut2.Connection.Open();
+            }
+            SqlDataReader dr = komut2.ExecuteReader();
+            while (dr.Read())
+            {
+                EntityOgrenci ent = new EntityOgrenci();
+                ent.ID = Convert.ToInt32(dr["OGRID"]);
+                ent.AD = dr["OGRAD"].ToString();
+                ent.SOYAD = dr["OGRSOYAD"].ToString();
+                ent.NUMARA = dr["OGRNUMARA"].ToString();
+                ent.FOTOGRAF = dr["OGRFOTO"].ToString();
+                ent.SIFRE = dr["OGRSIFRE"].ToString();
+                ent.BAKIYE = Convert.ToDouble(dr["OGRBAKIYE"].ToString());
+                degerler.Add(ent);
+            }
+            dr.Close();
+            return degerler;
+        }
+
     }
 }
