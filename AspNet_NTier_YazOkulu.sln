@@ -5,9 +5,11 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet_NTier_YazOkulu", "AspNet_NTier_YazOkulu\AspNet_NTier_YazOkulu.csproj", "{C6C068C9-2D8B-46AE-A984-C759A1389333}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet_NTier_YazOkulu.EntityLayer", "AspNet_NTier_YazOkulu.EntityLayer\AspNet_NTier_YazOkulu.EntityLayer.csproj", "{557E1998-92B9-41E9-852C-1533C78B4901}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNet_NTier_YazOkulu.EntityLayer", "AspNet_NTier_YazOkulu.EntityLayer\AspNet_NTier_YazOkulu.EntityLayer.csproj", "{557E1998-92B9-41E9-852C-1533C78B4901}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet_NTier_YazOkulu.DataAccessLayer", "AspNet_NTier_YazOkulu.DataAccessLayer\AspNet_NTier_YazOkulu.DataAccessLayer.csproj", "{2E2598F4-609C-49B3-B8D7-D2A935C927E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNet_NTier_YazOkulu.DataAccessLayer", "AspNet_NTier_YazOkulu.DataAccessLayer\AspNet_NTier_YazOkulu.DataAccessLayer.csproj", "{2E2598F4-609C-49B3-B8D7-D2A935C927E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet_NTier_YazOkulu.BusinessLogicLayer", "AspNet_NTier_YazOkulu.BusinessLogicLayer\AspNet_NTier_YazOkulu.BusinessLogicLayer.csproj", "{C1873BD4-A793-43B2-8BEC-6F21613A6540}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{2E2598F4-609C-49B3-B8D7-D2A935C927E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E2598F4-609C-49B3-B8D7-D2A935C927E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E2598F4-609C-49B3-B8D7-D2A935C927E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1873BD4-A793-43B2-8BEC-6F21613A6540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1873BD4-A793-43B2-8BEC-6F21613A6540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1873BD4-A793-43B2-8BEC-6F21613A6540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1873BD4-A793-43B2-8BEC-6F21613A6540}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

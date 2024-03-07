@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspNet_NTier_YazOkulu.EntityLayer\AspNet_NTier_YazOkulu.EntityLayer.csproj" />
+  </ItemGroup>
+
+</Project>
