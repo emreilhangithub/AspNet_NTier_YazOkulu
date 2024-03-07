@@ -11,7 +11,7 @@ namespace AspNet_NTier_YazOkulu
 {
 
 
-    public partial class Default
+    public partial class OgrenciEkle
     {
 
         /// <summary>

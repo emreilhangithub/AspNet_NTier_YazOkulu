@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace AspNet_NTier_YazOkulu
 {
-    public partial class OgrenciListesi : System.Web.UI.Page
+    public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
