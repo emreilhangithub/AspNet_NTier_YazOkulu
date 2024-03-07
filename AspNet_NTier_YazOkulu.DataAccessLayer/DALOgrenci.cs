@@ -58,5 +58,16 @@ namespace AspNet_NTier_YazOkulu.DataAccessLayer
             return degerler;
         }
 
+        public static bool OgrenciSil(int parametre)
+        {
+            SqlCommand komut3 = new SqlCommand("DELETE FROM TBLOGRENCI WHERE OGRID = @OGRID", Baglanti.bgl);
+            if (komut3.Connection.State != ConnectionState.Open)
+            {
+                komut3.Connection.Open();
+            }
+            komut3.Parameters.AddWithValue("@OGRID", parametre);
+            return komut3.ExecuteNonQuery() > 0;
+        }
+
     }
 }
