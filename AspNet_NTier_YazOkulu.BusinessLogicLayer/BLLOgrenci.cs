@@ -26,11 +26,25 @@ namespace AspNet_NTier_YazOkulu.BusinessLogicLayer
 
         public static bool OgrenciSilBLL(int p)
         {
-            if (p != null)
+            if (p >= 0)
             {
                 return DALOgrenci.OgrenciSil(p);
             }
                 return false;
+        }
+
+        public static List<EntityOgrenci> BllDetay(int p)
+        {
+            return DALOgrenci.OgrenciDetay(p);
+        }
+
+        public static bool OgrenciGuncelleBll (EntityOgrenci p)
+        {
+            if (p != null && p.AD != null && p.SOYAD != null && p.NUMARA != null && p.SIFRE != null && p.FOTOGRAF != null)
+            {
+                return DALOgrenci.OgrenciGuncelle(p);
+            }
+            return false;
         }
 
     }

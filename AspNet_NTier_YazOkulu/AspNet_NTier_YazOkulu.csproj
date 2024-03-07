@@ -67,19 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
+    <Content Include="OgrenciEkle.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
-    <Content Include="OgrenciListesi.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="OgrenciSil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="OgrenciEkle.aspx.cs">
+      <DependentUpon>OgrenciEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="OgrenciEkle.aspx.designer.cs">
+      <DependentUpon>OgrenciEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
@@ -95,12 +95,12 @@
     <Compile Include="OgrenciGuncelle.aspx.designer.cs">
       <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="OgrenciListesi.aspx.cs">
-      <DependentUpon>OgrenciListesi.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="OgrenciListesi.aspx.designer.cs">
-      <DependentUpon>OgrenciListesi.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrenciSil.aspx.cs">
       <DependentUpon>OgrenciSil.aspx</DependentUpon>

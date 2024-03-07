@@ -18,9 +18,9 @@
                 <a class="navbar-brand" href="#">Yaz Okulu Ders Kayıt</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="#">Anasayfa</a></li>
-                <li><a href="OgrenciListesi.aspx">Öğrenciler</a></li>
-                <li><a href="Default.aspx">Yeni Kayıt</a></li>
+                <li><a href="Default.aspx">Anasayfa</a></li>
+                <li><a href="Default.aspx">Öğrenciler</a></li>
+                <li><a href="OgrenciEkle.aspx">Yeni Kayıt</a></li>
                 <li><a href="#">Öğretmenler</a></li>
                 <li><a href="#">Dersler</a></li>
                 <li><a href="#">Kontenjanlar</a></li>

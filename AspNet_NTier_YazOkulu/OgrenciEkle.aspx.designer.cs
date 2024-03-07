@@ -11,7 +11,7 @@ namespace AspNet_NTier_YazOkulu
 {
 
 
-    public partial class OgrenciGuncelle
+    public partial class Default
     {
 
         /// <summary>
@@ -22,15 +22,6 @@ namespace AspNet_NTier_YazOkulu
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
-
-        /// <summary>
-        /// TxtId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtId;
 
         /// <summary>
         /// TxtAd control.
@@ -78,12 +69,12 @@ namespace AspNet_NTier_YazOkulu
         protected global::System.Web.UI.WebControls.TextBox TxtFoto;
 
         /// <summary>
-        /// BtnOgrenciGuncelle control.
+        /// BtnOgrenciKaydet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnOgrenciGuncelle;
+        protected global::System.Web.UI.WebControls.Button BtnOgrenciKaydet;
     }
 }

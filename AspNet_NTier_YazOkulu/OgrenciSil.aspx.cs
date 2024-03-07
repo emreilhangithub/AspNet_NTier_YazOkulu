@@ -18,7 +18,7 @@ namespace AspNet_NTier_YazOkulu
             EntityOgrenci ent = new EntityOgrenci();
             ent.ID = OGRID;
             BLLOgrenci.OgrenciSilBLL(ent.ID);
-            Response.Redirect("OgrenciListesi.aspx"); //yönlendirme yapar
+            Response.Redirect("Default.aspx"); //yönlendirme yapar
         }
     }
 }

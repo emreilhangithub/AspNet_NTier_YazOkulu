@@ -1,41 +1,38 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AspNet_NTier_YazOkulu.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AspNet_NTier_YazOkulu.OgrenciListesi" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-    <form id="Form1" runat="server">
-
-        <div class="form-group">
-
-            <div>
-                <asp:Label for="TxtAd" runat="server" Text="Ögrenci Adı:" style="font-weight: 700"></asp:Label>
-                <asp:TextBox ID="TxtAd" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
-
-            <div>
-                <asp:Label for="TxtSoyad" runat="server" Text="Ögrenci Soyadı:" style="font-weight: bold"></asp:Label>
-                <asp:TextBox ID="TxtSoyad" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
-
-            <div>
-                <asp:Label for="TxtNumara" runat="server" Text="Ögrenci Numara:" style="font-weight: bold"></asp:Label>
-                <asp:TextBox ID="TxtNumara" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
-
-            <div>
-                <asp:Label for="TxtSifre" runat="server" Text="Ögrenci Şifre:" style="font-weight: bold"></asp:Label>
-                <asp:TextBox ID="TxtSifre" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
-
-            <div>
-                <asp:Label for="TxtFoto" runat="server" Text="Ögrenci Fotoğraf:" style="font-weight: bold"></asp:Label>
-                <asp:TextBox ID="TxtFoto" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
-
-        </div>
-
-        <asp:Button ID="BtnOgrenciKaydet" runat="server" Text="Kaydet" OnClick="BtnOgrenciKaydet_Click"  CssClass="btn btn-info"/>
-    </form>
-
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Ögrenci ID </th>
+            <th>Ögrenci Ad </th>
+            <th>Ögrenci Soyad </th>
+            <th>Ögrenci Numara </th>
+            <th>Ögrenci Şifre </th>
+            <th>Ögrenci Fotoğraf </th>
+            <th>Ögrenci Bakiye </th>
+            <th>İşlemler </th>
+        </tr>
+        <tbody>
+            <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate>
+                    <tr>
+                        <td> <%#Eval("ID")%> </td>
+                        <td> <%#Eval("AD")%> </td>
+                        <td> <%#Eval("SOYAD")%> </td>
+                        <td> <%#Eval("NUMARA")%> </td>
+                        <td> <%#Eval("FOTOGRAF")%> </td>
+                        <td> <%#Eval("SIFRE")%> </td>
+                        <td> <%#Eval("BAKIYE")%> </td>
+                        <td>
+                            <asp:HyperLink NavigateUrl='<%# "~/OgrenciSil.aspx?OGRID=" + Eval("ID")%>' ID="HyperLink1" CssClass="btn btn-danger" runat="server">Sil</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%# "~/OgrenciGuncelle.aspx?OGRID=" + Eval("ID")%>' ID="HyperLink2" CssClass="btn btn-success" runat="server">Güncelle</asp:HyperLink>
+                        </td>
+                    </tr>
+                </ItemTemplate>
+            </asp:Repeater>
+        </tbody>
+    </table>
 </asp:Content>
