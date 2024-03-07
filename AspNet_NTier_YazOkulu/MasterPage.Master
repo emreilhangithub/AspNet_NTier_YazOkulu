@@ -22,7 +22,7 @@
                 <li><a href="Default.aspx">Öğrenciler</a></li>
                 <li><a href="OgrenciEkle.aspx">Yeni Kayıt</a></li>
                 <li><a href="#">Öğretmenler</a></li>
-                <li><a href="#">Dersler</a></li>
+                <li><a href="Dersler.aspx">Dersler</a></li>
                 <li><a href="#">Kontenjanlar</a></li>
                 <li><a href="#">Yardım</a></li>
             </ul>
