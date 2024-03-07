@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AspNet_NTier_YazOkulu.DataAccessLayer\AspNet_NTier_YazOkulu.DataAccessLayer.csproj" />
     <ProjectReference Include="..\AspNet_NTier_YazOkulu.EntityLayer\AspNet_NTier_YazOkulu.EntityLayer.csproj" />
   </ItemGroup>
 
